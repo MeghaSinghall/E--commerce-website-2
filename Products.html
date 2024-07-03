@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerse</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive-style.css">
+
+</head>
+
+<body>
+    <header style="height:60px;">
+        <a href="#" class="logo">
+
+        </a>
+        <img style="height:58px;width:auto;border-radius:20px;margin-top: 2px;" class="logo-img" src="Logo.png">
+        <form style="margin-top:10px" class="search-container" action="/" method="post"
+            sytle="position:relative;z-index:+1">
+            <input type="text" name="searchvalue" placeholder="Search..." class="search-input">
+            <a href="" class="search-btn">
+                <i class="fas fa-search"></i>
+            </a>
+        </form>
+        <ul class="navbar" style="margin-right: 0px;">
+            <!-- <img style="height:58px;width:auto;border-radius:20px;margin-top: 2px;" class="logo-img" src="Logo.png"> -->
+            <li><a href="home.html">Home</a></li>
+            <li><a class="active" href="Products.html">Products</a></li>
+            <li><a href="About us.html">About us</a></li>
+            <li><a href="Checkout.html">Check out</a></li>
+            <li><a href="Contact us.html">Contact us</a></li>
+            <li><a href="Log in.html">Login </a></li>
+            <li id="lg-bag"><a href="Cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i> </a></li>
+            <!-- <a href="#" id="close"><i class="far fa-times"></i></a> -->
+        </ul>
+
+        <div class="header-icons">
+            <a href="Cart.html" style="display:none" class="header-iconsatag"><i class="fa fa-shopping-bag"
+                    aria-hidden="true"></i></a>
+
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+    <script>
+        let menu = document.querySelector("#menu-icon");
+        let navbar = document.querySelector(".navbar");
+
+
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            navbar.classList.toggle('open');
+        }
+
+        menu.onscroll = () => {
+            menu.classList.remove('bx-x');
+            navbar.classList.remove('open');
+        }
+    </script>
+
+
+
+
+
+    <section id="page-header">
+        <h1>#Stayhappy</h1>
+        <p>Save more on product by using coupons</p>
+
+    </section>
+
+
+
+
+
+    <section id="Product1" class="section-p1">
+
+
+        <div class="pro-Container">
+            <div class="pro" onclick="window.location.href='sproduct.html';" >
+                <img src="https://img.freepik.com/free-photo/graphic-tshirt-trendy-design-mockup-presented-wooden-hanger_460848-14045.jpg?size=626&ext=jpg"
+                    alt="">
+                <div class="des">
+                    <span>SSVN</span>
+                    <h5>lUNACHIS T-SHIRT</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$80</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="https://img.freepik.com/free-psd/black-t-shirt-back-mockup_23-292935579.jpg?1&w=740&t=st=1691701733~exp=1691702333~hmac=eeafdb53e6f0518f8ad7f7d95edad942df0ff77e67ef1913b8a1663fcbbccdc7"
+                    alt="">
+                <div class="des">
+                    <span>Zara</span>
+                    <h5>lUNACHIS T-SHIRT</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$89</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+
+            </div>
+
+
+
+            <div class="pro">
+                <img src="https://img.freepik.com/free-vector/white-female-sport-tank-top-illustration-3d-realistic-casual-sportswear_33099-709.jpg?w=740&t=st=1691701899~exp=1691702499~hmac=7a36bf10cae78b8ea03f219e6a6e3e3e21408ca9737e239980d2f8c09c0938f5"
+                    alt="">
+                <div class="des">
+                    <span>Zara</span>
+                    <h5>lUNACHIS T-SHIRT</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$100</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart "></i></a>
+            </div>
+
+
+
+            <div class="pro">
+                <img src="https://img.freepik.com/premium-photo/woman-yellow-top-with-floral-pattern-front_920356-641.jpg?size=626&ext=jpg&uid=R112545479&semt=ais"
+                    alt="">
+                <div class="des">
+                    <span>Zara</span>
+                    <h5>lUNACHIS T-SHIRT</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$180</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="https://img.freepik.com/free-photo/portrait-beautiful-model-sexy-female-dressed-summer-hipster-checkered-shirt-jeans-trendy-girl-posing-near-wall-street_158538-17191.jpg?w=900&t=st=1691702003~exp=1691702603~hmac=850e0cdf22c48c8f1477d6d499eb13f1af282711a0c6348203947a4298863e93"
+                    alt="">
+                <div class="des">
+                    <span>Zara</span>
+                    <h5>lUNACHIS T-SHIRT</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$180</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart "></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="https://img.freepik.com/free-photo/portrait-beautiful-model-sexy-female-dressed-summer-hipster-checkered-shirt-jeans-trendy-girl-posing-near-wall-street_158538-17191.jpg?w=900&t=st=1691702003~exp=1691702603~hmac=850e0cdf22c48c8f1477d6d499eb13f1af282711a0c6348203947a4298863e93"
+                    alt="">
+                <div class="des">
+                    <span>Zara</span>
+                    <h5>lUNACHIS T-SHIRT</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$180</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+
+
+            <div class="pro">
+                <img src="https://img.freepik.com/free-photo/graphic-tshirt-trendy-design-mockup-presented-wooden-hanger-with-sapce-your-test_460848-14315.jpg?size=626&ext=jpg"
+                    alt="">
+                <div class="des">
+                    <span>Zara</span>
+                    <h5>lUNACHIS T-SHIRT</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$80</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+
+            </div>
+
+
+            <div class="pro">
+                <img src="https://img.freepik.com/free-photo/front-view-smiley-woman-pointing-herself_23-2148946299.jpg?w=740&t=st=1691735277~exp=1691735877~hmac=e35386e493659f180f03cf539b3713ae65d2447b588ee21d3bd493fefbbbf736g"
+                    alt="">
+                <div class="des">
+                    <span>Zara</span>
+                    <h5>lUNACHIS T-SHIRT</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$80</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+
+            </div>
+
+
+            <div class="pro">
+                <img src="https://img.freepik.com/free-psd/happy-skater-posing-with-skateboard_23-2147653515.jpg?size=626&ext=jpg&uid=R112545479&semt=sph"
+                    alt="">
+                <div class="des">
+                    <span>Zara</span>
+                    <h5>lUNACHIS T-SHIRT</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$80</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+
+            </div>
+
+
+            <div class="pro">
+                <img src="https://img.freepik.com/free-psd/white-t-shirt-front-mockup_23-292935585.jpg?size=626&ext=jpg&uid=R112545479&semt=sph"
+                    alt="">
+                <div class="des">
+                    <span>Zara</span>
+                    <h5>lUNACHIS T-SHIRT</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$80</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+
+    <section id="pagination" class="section-p1">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#"><i class="fal fa-long-arrow-alt-right"></i></a>
+    </section>
+   
+
+    <section id="newsletter" class="section-p1 ">
+        <div class="newstext">
+            <h4>Sign Up for newsletter</h4>
+            <p>Get E-mail updates about our latest product and <span>Special Offer</span> .</p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Enter Your e-mail address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+
+
+
+    <footer class=" section-p1">
+        <div class="col">
+            <img class="logo" src="Logo.png" alt="">
+            <h4>Contacts</h4>
+            <p> <strong>Address: </strong>Random address</p>
+            <p> <strong>Phone: </strong>00000-00000</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-whatsapp"></i>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col">
+            <h4>About Us</h4>
+            <a href="/About us.html">About Us</a>
+            <a href="#">Delivery Info</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="/Contact us.html">Contact Us</a>
+        </div>
+
+
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign in</a>
+            <a href="#">View Cart</a>
+            <a href="#">My wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+    </footer>
+  
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="Checkout.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Check out</title>
+</head>
+<body>
+
+    <header style="height:60px;">
+        <a href="#" class="logo">
+
+        </a>
+        <img style="height:58px;width:auto;border-radius:20px;margin-top: 2px;" class="logo-img" src="Logo.png">
+        <form style="margin-top:10px" class="search-container" action="/" method="post"
+            sytle="position:relative;z-index:+1">
+            <input type="text" name="searchvalue" placeholder="Search..." class="search-input">
+            <a href="" class="search-btn">
+                <i class="fas fa-search"></i>
+            </a>
+        </form>
+        <ul class="navbar" style="margin-right: 0px;">
+            <li><a class="active" href="home.html">Home</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="About us.html">About us</a></li>
+            <li><a href="Checkout.html">Check out</a></li>
+            <li><a href="Contact us.html">Contact us</a></li>
+            <li><a href="Log in.html">Login </a></li>
+            <li id="lg-bag"><a href="Cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i> </a></li>
+            <!-- <a href="#" id="close"><i class="far fa-times"></i></a> -->
+        </ul>
+
+        <div class="header-icons">
+            <a href="Cart.html" style="display:none" class="header-iconsatag"><i class="fa fa-shopping-bag"
+                    aria-hidden="true"></i></a>
+           
+
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+    <script>
+        let menu = document.querySelector("#menu-icon");
+        let navbar = document.querySelector(".navbar");
+
+
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            navbar.classList.toggle('open');
+        }
+
+        menu.onscroll = () => {
+            menu.classList.remove('bx-x');
+            navbar.classList.remove('open');
+        }
+    </script>
+    <div class="wrapper">
+        <div class="container">
+            <form action="" class="login">
+                <h1>
+                    <i class="fas fa-shipping-fast login__icon"></i>
+                    Shipping Details
+                </h1>
+                <div class="login__field name">
+                    <div>
+                        <label for="f-name">First</label>
+                        <input type="text" name="f-name" class="login__input">
+                    </div>
+                    <div>
+                        <label for="l-name">Last</label>
+                        <input type="text" name="l-name" class="login__input">
+                    </div>
+                </div>
+                <div class="login__field street">
+                    <label for="name">Street</label>
+                    <input type="text" name="address" class="login__input">
+                </div>
+                <div class="login__field address-info">
+                    <div>
+                        <label for="city">City</label>
+                        <input type="text" name="city" class="login__input">
+                    </div>
+                    <div>
+                        <label for="state">State</label>
+                        <input type="text" name="state" class="login__input">
+                    </div>
+                    <div>
+                        <label for="zip">Zip</label>
+                        <input type="text" name="zip" class="login__input">
+                    </div>
+                </div>
+                <h1>
+                    <i class="far fa-credit-card login__icon"></i> Payment Information
+                </h1>
+                <div class="login__field cc-num">
+                    <label for="card-num">Credit Card No.</label>
+                    <input type="text" name="card-num" class="login__input">
+                </div>
+                <div class="login__field cc-info">
+                    <div>
+                        <label for="card-num">Exp</label>
+                        <input type="text" name="expire" class="login__input">
+                    </div>
+                    <div>
+                        <label for="card-num">CCV</label>
+                        <input type="text" name="security" class="login__input">
+                    </div>
+                </div>
+                <div class="login__field btns">
+                    <button class="login__submit">
+                        Purchase
+                        <i class="fas fa-angle-right button__icon"></i>
+                    </button>
+                    <button class="login__submit">
+                        Back to cart
+                        <i class="fas fa-angle-left button__icon"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+
